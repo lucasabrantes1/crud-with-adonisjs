@@ -5,7 +5,7 @@ export default class AuthController {
     const { email, password } = request.all()
 
     const token = await auth.attempt(email, password, {
-      expiresIn: '30',
+      expiresIn: '30 days'
     })
     return token
   }

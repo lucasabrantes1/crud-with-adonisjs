@@ -4,7 +4,7 @@ export default class FirstUserSeeder extends BaseSeeder {
   public async run() {
     await User.create({
       email: 'lucasabrantes1@outlook.com',
-      password: 'secret',
+      password: 'secret'
     })
   }
 }
