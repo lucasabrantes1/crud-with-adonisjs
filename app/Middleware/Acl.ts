@@ -11,5 +11,7 @@ export default class Acl {
     if (!allowedRoles.includes(user.role)) {
       return response.unauthorized({ error: { message: 'acess denied' } })
     }
+
+    await next()
   }
 }
